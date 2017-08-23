@@ -13,6 +13,8 @@
 		282DBE851F4D4C63006B1573 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 282DBE831F4D4C63006B1573 /* Main.storyboard */; };
 		282DBE871F4D4C63006B1573 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 282DBE861F4D4C63006B1573 /* Assets.xcassets */; };
 		282DBE8A1F4D4C63006B1573 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 282DBE881F4D4C63006B1573 /* LaunchScreen.storyboard */; };
+		282DBE941F4D538C006B1573 /* FileDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 282DBE931F4D538C006B1573 /* FileDownloader.m */; };
+		282DBE981F4D5442006B1573 /* FileDownloaderProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 282DBE971F4D5442006B1573 /* FileDownloaderProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		282DBE861F4D4C63006B1573 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		282DBE891F4D4C63006B1573 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		282DBE8B1F4D4C63006B1573 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		282DBE921F4D538C006B1573 /* FileDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDownloader.h; sourceTree = "<group>"; };
+		282DBE931F4D538C006B1573 /* FileDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileDownloader.m; sourceTree = "<group>"; };
+		282DBE961F4D5442006B1573 /* FileDownloaderProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDownloaderProxy.h; sourceTree = "<group>"; };
+		282DBE971F4D5442006B1573 /* FileDownloaderProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileDownloaderProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 		282DBE791F4D4C63006B1573 /* Patterns_20_Proxy */ = {
 			isa = PBXGroup;
 			children = (
+				282DBE951F4D541A006B1573 /* Proxy */,
+				282DBE911F4D534B006B1573 /* Models */,
 				282DBE7D1F4D4C63006B1573 /* AppDelegate.h */,
 				282DBE7E1F4D4C63006B1573 /* AppDelegate.m */,
 				282DBE801F4D4C63006B1573 /* ViewController.h */,
@@ -77,6 +85,24 @@
 				282DBE7B1F4D4C63006B1573 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		282DBE911F4D534B006B1573 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				282DBE921F4D538C006B1573 /* FileDownloader.h */,
+				282DBE931F4D538C006B1573 /* FileDownloader.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		282DBE951F4D541A006B1573 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				282DBE961F4D5442006B1573 /* FileDownloaderProxy.h */,
+				282DBE971F4D5442006B1573 /* FileDownloaderProxy.m */,
+			);
+			name = Proxy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +179,8 @@
 			files = (
 				282DBE821F4D4C63006B1573 /* ViewController.m in Sources */,
 				282DBE7F1F4D4C63006B1573 /* AppDelegate.m in Sources */,
+				282DBE981F4D5442006B1573 /* FileDownloaderProxy.m in Sources */,
+				282DBE941F4D538C006B1573 /* FileDownloader.m in Sources */,
 				282DBE7C1F4D4C63006B1573 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
